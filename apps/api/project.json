@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx-bun/nx:build",
+      "outputs": ["dist/api"],
+      "options": {
+        "entrypoints": ["apps/api/src/index.ts"],
+        "outputPath": "dist/api/src/index.ts",
+        "bun": false,
+        "smol": false
+      }
+    },
+    "serve": {
+      "executor": "@nx-bun/nx:run",
+      "defaultConfiguration": "development",
+      "options": {
+        "main": "api/src/index.ts",
+        "watch": true
+      }
+    }
+  },
+  "tags": []
+}

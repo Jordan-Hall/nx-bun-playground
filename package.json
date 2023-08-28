@@ -15,11 +15,13 @@
     "react-native-svg": "13.9.0",
     "react-native-svg-transformer": "1.0.0",
     "react-native-web": "~0.19.6",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "elysia": "latest"
   },
   "devDependencies": {
     "@config-plugins/detox": "~6.0.0",
     "@expo/cli": "~0.10.10",
+    "@nx-bun/nx": "^0.0.5",
     "@nx/detox": "16.7.4",
     "@nx/eslint-plugin": "16.7.4",
     "@nx/expo": "16.7.4",
@@ -58,6 +60,8 @@
     "react-test-renderer": "18.2.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
-    "typescript": "~5.1.3"
+    "typescript": "~5.1.3",
+    "@nx-bun/task-worker-runner": "latest",
+    "bun-types": "latest"
   }
 }
